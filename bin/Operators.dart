@@ -43,10 +43,9 @@ void main() {
   print(username == "admin" || password == "123");
   print(!(username == "abc" && password == "123"));
 
-
   //5 unary ops ++ -- - +
   print("----unary ops-----");
-      int x = 100;
+  int x = 100;
   print("x++ = ${x++}");
   print("current x = $x");
   print("x-- = ${x--}");
@@ -66,23 +65,25 @@ void main() {
   print("-----Eligible------");
   int age = 20;
   print("Age = $age");
-  String result = age>18 ? "Eligible to vote" : "Not Eligible" ;
+  String result = age > 18 ? "Eligible to vote" : "Not Eligible";
   print(result);
 
   //8 Bitwise ops in binary values shifting etc
 
- print("-----Access------");
+  print("-----Access------");
 
-  String uname = "admi" ,pass = "pass";
+  String uname = "admi", pass = "pass";
   print("name = $uname");
   print("password = $pass");
-  var res = (uname == "admi")&&(pass == "pass") ? "Access granted" : "access denied" ;
+  var res = (uname == "admi") && (pass == "pass")
+      ? "Access granted"
+      : "access denied";
   print(res);
 
   print("-----Largest of 3 nos------");
   print("Largest of 3 nos");
-  int q = 3,w = 4 , e = 6;
-  var ress =  (q > w ) ? (q > e ? q : e) : (w>e ? w : e);
+  int q = 3, w = 4, e = 6;
+  var ress = (q > w) ? (q > e ? q : e) : (w > e ? w : e);
   print("q = $q");
   print("w = $w");
   print("e = $e");
@@ -91,9 +92,7 @@ void main() {
 //null aware ops in conditional ops  ??  condition ?? stmt to be executed if value is null
 
   print("-----null aware------");
-  String?  pwd;
+  String? pwd;
   var re = pwd?.length ?? "password cannot be null";
   print(re);
-
-
 }

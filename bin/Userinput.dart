@@ -9,5 +9,5 @@ void main() {
       stdin.readLineSync()!); //convert string into int double can also be used
   print("Age = $age");
 }
-//\dart.io package for reading
+// dart.io package for reading
 // stdin.readLine.sync(); builtin fun for reading;

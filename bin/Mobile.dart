@@ -1,14 +1,13 @@
-class Cars{
-
+class Cars {
   String? model;
   int? mileage;
   String? name;
-  static String brand='maruthi';
+  static String brand = 'maruthi';
   String? color;
   int? seatcap;
-
 }
-void main(){
+
+void main() {
   Cars c1 = Cars();
   print('name= ${c1.name = 'ignis'}');
   print('mileage= ${c1.mileage = 16}');
@@ -33,6 +32,4 @@ void main(){
   print('seatcap= ${c3.seatcap = 6}');
   print("Brand : ${Cars.brand}");
   print('color= ${c2.color = 'red'}');
-
-
 }
