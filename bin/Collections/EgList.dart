@@ -45,11 +45,7 @@ void main() {
   print('--------------------');
   print('L3');
   var l3 = List.from(l2);
-  l3.addAll([
-    2,
-    2,
-    2,
-    2] );
+  l3.addAll([2, 2, 2, 2]);
   print(l3);
 
   // 4.List.of
@@ -62,9 +58,28 @@ void main() {
   //5. List.Unmodifiable
   print('--------------------');
   print('L5');
-  var l5  = List.unmodifiable(l4);
- // l5.addAll(['a','s']);
+  var l5 = List.unmodifiable(l4);
+  // l5.addAll(['a','s']);
   print(l5);
 
+//6.List.filled(int length,E fill,{boolean growable:false})
+//length - size
+//fill - values we store in list
+  print('--------------------');
+  print('L6');
+  var l6 = List.filled(9, 1, growable: true);
+  l6[1] = 2;
+  l6[1] = 6;
+  l6[1] = 8;
+  l6[1] = 0;
+  l6[1] = 9;
+  l6.add(100);
+  print(l6);
 
+//l7 Liat.generate();
+  print('--------------------');
+  print('L6');
+  var l7 = List.generate(10, (index) => index * 2);
+  l7.add(22);
+  print(l7);
 }
