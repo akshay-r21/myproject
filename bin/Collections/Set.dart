@@ -9,7 +9,7 @@ void main(){
    Set s7= Set.from(x);
    Set s8 = Set.of(s5);//Set.of({1,1,2,2,3,3}); can also be used
    Set s9 = Set.unmodifiable(s5);
-   Set s10 = Set.identity();
+   Set s10 = Set.identity();//the set will be empty set we add element using add and addall all elements are instance of e
    s10.addAll([1,2,3,4,5]);
    // other than this union ,intersection,difference
    print(s8.union(s9));
