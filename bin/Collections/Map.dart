@@ -38,7 +38,7 @@ Map m9 = Map.fromIterable(l1); //key and values will be same
 print("m9 = $m9");
 
 var l2 = [10,11,2,12,33];
-var s1 = {1,234,45,44,43,};
+var s1 = {1,234,45,44,43, };
 
 Map m10 =Map.fromIterables(l1, s1);
 print('m10 =$m10');

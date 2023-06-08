@@ -21,9 +21,6 @@ class A {
 }
 
 void main(){
-/*
-  A obj = A();
-  A obj1 = A.name1();
-  A obj3 = A.name2('name');*/
+
 
 }
