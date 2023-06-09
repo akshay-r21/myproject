@@ -2,10 +2,6 @@ class mobile{
   String? os ="Android";
   String? processor = "snapdragon";
 
-  void MobileDisp(){
-    print("os is $os");
-    print("processsor is $processor");
-  }
 }
 class vivo extends mobile{
   String? model = "vivo";
@@ -14,6 +10,8 @@ class vivo extends mobile{
   void vivoDisp(){
     print("model = $model");
     print("series = $series");
+    print("os is $os");
+    print("processsor is $processor");
   }
 }
 
@@ -24,13 +22,15 @@ class oppo extends mobile{
   void oppodisp(){
     print("model = $model");
     print("series = $series");
+    print("os is $os");
+    print("processsor is $processor");
   }
 }
 
 void main(){
 
-  mobile mo = mobile();
-  mo.MobileDisp();
- /* mo1.vivoDisp();
-  mo2.oppoDisp();
-*/}
+  vivo mo1 = vivo();
+  mo1.vivoDisp();
+  oppo mo2 = oppo();
+  mo2.oppodisp();
+}
